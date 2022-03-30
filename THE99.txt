@@ -1,0 +1,223 @@
+//Program Title:      The 99
+//Author:             Nidhi Sarkar
+//Date:               June 15, 2021
+//Assignment:         Culminating project
+//Question:           N/A
+//Filename:           the99.java
+//Problem:            This program allows one to learn about the cast of Brooklyn 99  
+
+package culm;
+
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Font;
+import java.awt.Image;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.AbstractButton;
+import javax.swing.ImageIcon;
+import javax.swing.AbstractAction;
+import javax.swing.Action;
+import java.awt.Color;
+import java.awt.Component;
+
+public class the99 extends javax.swing.JFrame {
+
+	private JFrame frame;
+	JButton raymond;
+	JButton terry;
+	JButton jake;
+	JButton amy;
+	JButton boyle;
+	JButton rosa;
+	JButton gina;
+	JButton scully;
+	JButton hitchcock;
+	JButton pimento;
+	JButton about;
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					the99 window = new the99();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	public the99() {
+		initialize();
+	}
+
+	private void initialize() {
+		frame = new JFrame();
+		frame.setTitle("Meet the 99!");
+		frame.setBounds(100, 100, 700, 488);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+
+		raymond = new JButton("Capt. Raymond Holt");
+		raymond.setBackground(Color.WHITE);
+		raymond.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent r) {
+				ImageIcon raymond = new ImageIcon("holt.jpg");
+				JOptionPane.showMessageDialog(null, information99.rayInfo, "CAPTAIN RAYMOND HOLT",
+						JOptionPane.INFORMATION_MESSAGE, raymond);
+			}
+		});
+		raymond.setFont(new Font("Arial", Font.BOLD, 16));
+		raymond.setBounds(244, 283, 195, 23);
+		frame.getContentPane().add(raymond);
+
+		terry = new JButton("Lieut. Terry Jeffords");
+		terry.setBackground(Color.WHITE);
+		terry.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent t) {
+				ImageIcon terry = new ImageIcon("terry.jpg");
+				JOptionPane.showMessageDialog(null, information99.terryInfo, "LIETENANT TERRY JEFFORDS",
+						JOptionPane.INFORMATION_MESSAGE, terry);
+			}
+		});
+		terry.setFont(new Font("Arial", Font.BOLD, 16));
+		terry.setBounds(10, 317, 195, 23);
+		frame.getContentPane().add(terry);
+
+		jake = new JButton("Det. Jake Peralta");
+		jake.setBackground(Color.WHITE);
+		jake.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent j) {
+				ImageIcon jake = new ImageIcon("jake.jpg");
+				JOptionPane.showMessageDialog(null, information99.jakeInfo, "DETECTIVE JACOB PERALTA",
+						JOptionPane.INFORMATION_MESSAGE, jake);
+			}
+		});
+		jake.setFont(new Font("Arial", Font.BOLD, 16));
+		jake.setBounds(244, 317, 195, 23);
+		frame.getContentPane().add(jake);
+
+		amy = new JButton("Serge. Amy Santiago");
+		amy.setBackground(Color.WHITE);
+		amy.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent a) {
+				ImageIcon amy = new ImageIcon("amy.jpg");
+				JOptionPane.showMessageDialog(null, information99.amyInfo, "SERGEANT AMY SANTIAGO",
+						JOptionPane.INFORMATION_MESSAGE, amy);
+			}
+		});
+		amy.setFont(new Font("Arial", Font.BOLD, 16));
+		amy.setBounds(473, 317, 203, 23);
+		frame.getContentPane().add(amy);
+
+		boyle = new JButton("Det. Charles Boyle");
+		boyle.setBackground(Color.WHITE);
+		boyle.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent b) {
+				ImageIcon boyle = new ImageIcon("boyle.jpg");
+				JOptionPane.showMessageDialog(null, information99.boyleInfo, "DETECTIVE CHARLES BOYLE",
+						JOptionPane.INFORMATION_MESSAGE, boyle);
+			}
+		});
+		boyle.setFont(new Font("Arial", Font.BOLD, 16));
+		boyle.setBounds(10, 351, 195, 23);
+		frame.getContentPane().add(boyle);
+
+		rosa = new JButton("Det. Rosa Diaz");
+		rosa.setBackground(Color.WHITE);
+		rosa.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent r) {
+				ImageIcon rosa = new ImageIcon("rosa.jpg");
+				JOptionPane.showMessageDialog(null, information99.rosaInfo, "DETECTIVE ROSA DIAZ",
+						JOptionPane.INFORMATION_MESSAGE, rosa);
+			}
+		});
+		rosa.setFont(new Font("Arial", Font.BOLD, 16));
+		rosa.setBounds(244, 351, 195, 23);
+		frame.getContentPane().add(rosa);
+
+		gina = new JButton("Gina Linetti");
+		gina.setBackground(Color.WHITE);
+		gina.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent g) {
+				ImageIcon gina = new ImageIcon("gina.jpg");
+				JOptionPane.showMessageDialog(null, information99.ginaInfo, "GINA LINETTI",
+						JOptionPane.INFORMATION_MESSAGE, gina);
+			}
+		});
+		gina.setFont(new Font("Arial", Font.BOLD, 16));
+		gina.setBounds(473, 351, 203, 23);
+		frame.getContentPane().add(gina);
+
+		scully = new JButton("Det. Norm Scully");
+		scully.setBackground(Color.WHITE);
+		scully.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent s) {
+				ImageIcon scully = new ImageIcon("scully.jpg");
+				JOptionPane.showMessageDialog(null, information99.scullyInfo, "DETECTIVE NORM SCULLY",
+						JOptionPane.INFORMATION_MESSAGE, scully);
+			}
+		});
+		scully.setFont(new Font("Arial", Font.BOLD, 16));
+		scully.setBounds(10, 385, 195, 23);
+		frame.getContentPane().add(scully);
+
+		hitchcock = new JButton("Det. Michael Hitchcock");
+		hitchcock.setBackground(Color.WHITE);
+		hitchcock.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent h) {
+				ImageIcon hitchcock = new ImageIcon("hitchcock.jpg");
+				JOptionPane.showMessageDialog(null, information99.hitchcockInfo, "DETECTIVE MICHAEL HITCHCOCK",
+						JOptionPane.INFORMATION_MESSAGE, hitchcock);
+			}
+		});
+		hitchcock.setFont(new Font("Arial", Font.BOLD, 16));
+		hitchcock.setBounds(232, 385, 213, 23);
+		frame.getContentPane().add(hitchcock);
+
+		pimento = new JButton("Adrian Pimento");
+		pimento.setBackground(Color.WHITE);
+		pimento.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent t) {
+				ImageIcon pimento = new ImageIcon("pimento.jpg");
+				JOptionPane.showMessageDialog(null, information99.pimentoInfo, "ADRIAN PIMENTO",
+						JOptionPane.INFORMATION_MESSAGE, pimento);
+			}
+		});
+		pimento.setFont(new Font("Arial", Font.BOLD, 16));
+		pimento.setBounds(473, 385, 203, 23);
+		frame.getContentPane().add(pimento);
+
+		JLabel groupPic = new JLabel("");
+		Image img = new ImageIcon(this.getClass().getResource("/B99.jpg")).getImage();
+		groupPic.setIcon(new ImageIcon(img));
+		groupPic.setBounds(136, 54, 397, 218);
+		frame.getContentPane().add(groupPic);
+
+		JLabel instructions = new JLabel("Welcome! Click one of the characters' names to find out more about them.");
+		instructions.setFont(new Font("Arial", Font.BOLD, 15));
+		instructions.setBounds(80, 11, 544, 29);
+		frame.getContentPane().add(instructions);
+
+		about = new JButton("ABOUT");
+		about.setBackground(Color.LIGHT_GRAY);
+		about.setFont(new Font("Arial", Font.BOLD, 12));
+		about.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent a) {
+				ImageIcon nidhi = new ImageIcon("nidhisarkar.jpg");
+				JOptionPane.showMessageDialog(null, "Nidhi Sarkar created this for her culminating ICS3U project.\n"
+						+ "It is also quite fitting that the final season of Brooklyn 99 will air this fall.\n99!",
+						"ABOUT THE CREATOR", JOptionPane.INFORMATION_MESSAGE, nidhi);
+			}
+		});
+		about.setBounds(293, 425, 83, 23);
+		frame.getContentPane().add(about);
+	}
+
+}

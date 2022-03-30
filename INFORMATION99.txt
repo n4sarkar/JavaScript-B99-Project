@@ -1,0 +1,24 @@
+//Program Title:      Information 99
+//Author:             Nidhi Sarkar
+//Date:               June 15, 2021
+//Assignment:         Culminating project (other class)
+//Question:           N/A
+//Filename:           information99.java
+//Problem:            This program allows one to learn about the cast of Brooklyn 99  
+
+package culm;
+
+public class information99 {
+
+	protected static Object rayInfo = "NAME: Raymond Holt\nACTOR: Andre Braugher\nAGE: 65\nJOB: Captain\nSIGNIFICANT OTHER: Kevin Cozner (husband)\nFACT: He is a great fan of classical music";
+	protected static Object terryInfo = "NAME: Terry Jeffords\nACTOR: Terry Crews\nAGE: 50\nJOB: Lieutenant\nSIGNIFICANT OTHER: Sharon Jeffords (wife)\nFACT: He loves yogurt";
+	protected static Object jakeInfo = "NAME: Jacob Peralta\nACTOR: Andy Samberg\nAGE: 39\nJOB: Detective\nSIGNIFICANT OTHER: Amy Santiago (wife)\nFACT: His favourite movie is Diehard";
+	protected static Object amyInfo = "NAME: Amy Santiago\nACTOR: Melissa Fumero\nAGE: 38\nJOB: Sergeant\nSIGNIFICANT OTHER: Jake Peralta (husband)\nFACT: She loves binders... a lot";
+	protected static Object boyleInfo = "NAME: Charles Boyle\nACTOR: Joe Lo Truglio\nAGE: 40\nJOB: Detective\nSIGNIFICANT OTHER: Genevieve Mirren-Carter (girlfriend)\nFACT: He is a huge foodie";
+	protected static Object rosaInfo = "NAME: Rosa Diaz\nACTOR: Stephanie Beatriz\nAGE: 35\nJOB: Detective\nSIGNIFICANT OTHER: Single\nFACT: She went to both business school\nand medical school";
+	protected static Object ginaInfo = "NAME: Gina Linetti\nACTOR: Chelsea Peretti\nAGE: 38\nJOB: Social media influencer, former 99 assistant\nSIGNIFICANT OTHER: Milton Boyle (boyfriend)\nFACT: She is a talented dancer";
+	protected static Object scullyInfo = "NAME: Norm Scully\nACTOR: Joel Mckinnon Miller\nAGE: est. 50\nJOB: Detective\nSIGNIFICANT OTHER: Cindy Shatz (girlfriend)\nFACT: He is an excellent opera singer";
+	protected static Object hitchcockInfo = "NAME: Michael Hitchcock\nACTOR: Dirk Blocker\nAGE: est.50\nJOB: Detective\nSIGNIFICANT OTHER: Single\nFACT: He is lactose intolerant";
+	protected static Object pimentoInfo = "NAME: Adrian Pimento\nACTOR: Jason Mantzoukas\nAGE: est. 40\nJOB: P.I., former 99 detective\nSIGNIFICANT OTHER: Single\nFACT: As a detective, he went undercover\nand worked for a mob boss for 12 years.\nHe was so traumatized that he had to quit\nthe police force. ";
+
+}
